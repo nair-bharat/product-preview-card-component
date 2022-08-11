@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+}
+
+.flex-parent-container {
+    display: inline-block;
+    border: 2px solid red;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: left;
+    border: 2px solid blue;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: auto;
+}
+
+.flex-item-right {
+    background-color: white;
+    padding: 10px;
+    flex: auto;
+}
+
+#default-img1 {
+    display: block;
+}
+
+#default-img2 {
+    display:none;
+}
+
+@media (max-width: 375px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    #default-img1 {
+        display: none;
+    }
+
+    #default-img2 {
+        display: block;
+    }
+}
